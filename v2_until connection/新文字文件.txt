@@ -1,0 +1,10 @@
+Server:
+	Send:
+	    strcpy(sendData,"respond from server\n");
+	    Sleep(10);
+	    send(current_client,sendData,sizeof(sendData),0);
+
+
+		strcpy(sendData,"Play Again!\n");
+	         Sleep(10);
+	         send(current_client,sendData,sizeof(sendData),0); 
